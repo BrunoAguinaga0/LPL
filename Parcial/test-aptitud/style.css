@@ -1,0 +1,26 @@
+body{background-color:aliceblue;}
+
+header{justify-content: center;
+display: flex;}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 150px; /* o el mismo ancho para todos */
+    margin-right: 10px;
+    text-align: right;
+}
+
+.form-row input {
+    flex: 1;
+}

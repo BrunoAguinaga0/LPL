@@ -1,0 +1,85 @@
+body{background-color:aliceblue;}
+
+header{justify-content: center;
+display: flex;}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 12.5%;
+}
+article.h2{
+    justify-content: start;
+}
+
+.form-row {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+
+    width: 150px; /* o el mismo ancho para todos */
+    margin-right: 10px;
+    text-align: end;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+#caja {
+    width: 45%;
+    height: 340 px;
+    border: 2px solid;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#caja #h3test,.Pregunta{
+    margin: 0;
+    width: 100%;          /* 👈 Hace que el h3 ocupe todo el ancho del contenedor */
+    text-align: left;     /* 👈 Alinea el texto a la izquierda */
+    padding-left: 20px;   /* 👈 Opcional: margen interno para que no quede pegado al borde */
+    box-sizing: border-box; /* 👈 Asegura que el padding no sume ancho extra */
+}
+#h3test{
+    text-decoration: underline;
+}
+
+.rta
+{   
+    border: 1px solid;
+    padding-left:3px ;
+}
+.preg{
+    padding-top: 5px;
+    width: 100%;
+    padding-left: 0px;
+    align-items: left;
+}
+.Pregunta{
+    padding-left: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#questions{
+    margin-bottom: 10px;
+}
+
+#enviarPreg{
+    margin-top: 25px;
+    margin-left: 180px;
+}
+
+#btnDatos{
+    margin-left: 195px;
+}
+

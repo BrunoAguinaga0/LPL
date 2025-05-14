@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cotizador En Linea</title>
+	<script type="text/javascript" src="javascript\js_1.js"></script>
+</head>
+<body>
+	<h1>Bienvenido!!</h1>
+	<br>
+
+	<label>Seleccione un servicio -></label>
+	<select id="tipo_servicio">
+		<option selected>Ninguno</option>
+		<option onclick="oculto_div_limpieza()">Peluqueria</option>
+		<option onclick="oculto_div_limpieza()">Banio</option>
+		<option onclick="muestro_div_limpieza()">LimpiezaDeAcuario</option>
+		<option onclick="oculto_div_limpieza()">Vacunacion</option>
+		<option onclick="oculto_div_limpieza()">ConsultaMedica</option>
+	</select>
+
+	<br>
+
+	<div id="div_limpieza_acuario" hidden>
+		<label>Ingrese las dimensiones de la pecera</label>
+		<br>
+
+		<label id="etiqueta_alto">Alto: </label>
+		<input type="number" id="input_alto">
+		
+		<br>
+		
+		<label>Ancho</label>
+		<input type="number" id="input_ancho">
+	
+		<br>
+
+		<label>Ingrese la cantidad de peces</label>
+		<input type="number" id="cant_peces">
+
+	</div>
+
+	<div id="div_otros_servicios">
+		<label>Ingrese la cantidad de animales</label>
+		<select id="cant_animales">
+			<option selected id="cant_animales_op1" value="1">1</option>
+			<option id="cant_animales_op2" value="2">2</option>
+			<option id="cant_animales_op3" value="3">3</option>
+			<option id="cant_animales_op4" value="4">4</option>
+			<option id="cant_animales_op5" value="5">5</option>
+			<option id="cant_animales_op6" value="6">6</option>
+		</select>
+
+		<br>
+
+		<label>Seleccione la raza</label>
+		<select id="raza_animal">
+			<option>PastorAleman</option>
+			<option>Rotweiller</option>
+			<option>Bulterrier</option>
+			<option>GoldenRetriever</option>
+			<option>Salchicha</option>
+		</select>
+
+		<br>
+
+		<label>Ingrese el peso del animal</label>
+		<input type="number" id="peso_animal">
+
+	</div>
+
+	<br>
+
+	<label>Observaciones: </label>
+	<input type="text" name="campo_observaciones" id="observaciones">
+
+	<br>
+
+	<label>Indique la sucursal de entrega</label>
+	<select id="sucursal_entrega">
+		<option>Veterinaria Central</option>
+		<option>Sucursal Pueyrred&oacuten</option>
+		<option>Sucursal Km 8</option>
+		<option>Sucursal Caleta C&oacuterdoba</option>
+		<option>Sucursal Rada Tilly</option>
+	</select>
+
+	<br>
+
+	<label>Indique la sucursal de retiro</label>
+	<select id="sucursal_retiro">
+		<option>Veterinaria Central</option>
+		<option>Sucursal Pueyrred&oacuten</option>
+		<option>Sucursal Km 8</option>
+		<option>Sucursal Caleta C&oacuterdoba</option>
+		<option>Sucursal Rada Tilly</option>
+	</select>
+
+	<br>
+
+	<div id="div_domicilio_acuario" hidden>
+		<label>Ingrese el domicilio donde se encuentra el acuario</label>
+		<input type="text" name="domicilio_acuario" id="domicilio_acuario">
+		<br>
+	</div>
+
+	<button type="submit" onclick="proceso_formulario()">Finalizar</button>
+
+</body>
+</html>

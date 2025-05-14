@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styletest.css">
+    <script src="test.js" defer></script>
+</head>
+<body>
+    <p id="TiempoActual"></p>
+    <header>
+        <h1>Test Aptitud</h1>
+    </header>
+    <section>
+        <article>
+            <form id="datosUsuario">
+                <div class="form-row">
+                    <label for="Nombre">Apellido y Nombre:</label>
+                    <input type="text" id="Nombre" placeholder="Nombre y Apellido">
+                </div>
+                <div class="form-row">
+                    <label for="Edad">Edad:</label>
+                    <input type="text" id="Edad" placeholder="Edad">
+                </div>
+                <div class="form-row">
+                    <label for="Domicilio">Domicilio:</label>
+                    <input type="text" id="Domicilio" placeholder="Domicilio">
+                </div>
+                <button id="btnDatos" type="button">Enviar Datos</button>
+            </form>
+        </article>
+        <article id="caja">
+            <h3 id="h3test">Test para postular</h3>
+            <form id="questions">
+            <p class="Pregunta">Pregunta 1: ¿Que ingredientes lleva un desayuno simple? - Opcion Multiple.</p>
+            <div class="preg">
+                <label class="rta">Cafe o Te
+                    <input type="checkbox" name="preg1" value="cafe">
+                </label>    
+                <label class="rta">Leche
+                    <input type="checkbox" name="preg1" value="leche">
+                </label>
+                <label class="rta">Tostadas
+                    <input type="checkbox" name="preg1" value="tostadas">
+                </label>
+                <label class="rta">Limon
+                    <input type="checkbox" name="preg1" value="limon">
+                </label>
+                <label class="rta">Manteca
+                    <input type="checkbox" name="preg1" value="manteca">
+                </label>
+                <label class="rta">Medialunas
+                    <input type="checkbox" name="preg1" value="medialunas">
+                </label>
+                <label class="rta">Ajo
+                    <input type="checkbox" name="preg1" value="ajo">
+                </label>
+            </div>
+            <p class="Pregunta">Pregunta 2: ¿Que fruta seca sale de la uva? - Opcion Unica.</p>
+            <div class="preg">
+                <label class="rta">Anacardo
+                    <input type="radio" name="preg2" value="anacardo">
+                </label>    
+                <label class="rta">Pasas
+                    <input type="radio" name="preg2" value="pasas">
+                </label>
+                <label class="rta">Ciruelas
+                    <input type="radio" name="preg2" value="ciruelas">
+                </label>
+            </div>
+            <p class="Pregunta">Pregunta 3: ¿Para que sirve el caldo corto? - Opcion Unica.</p>
+            <div class="preg">
+                <label class="rta">Para alimentos que necesitan poca coccion.
+                    <input type="radio" name="preg3" value="coccion">
+                </label>    
+                <label class="rta">Para quitar la grasa de la carne.
+                    <input type="radio" name="preg3" value="carne">
+                </label>
+            </div>
+            <p class="Pregunta">Pregunta 4: ¿Cual es la temperatura maxima para freir? - Opcion Multiple.</p>
+            <div class="preg">
+                <label class="rta">180°
+                    <input type="checkbox" name="preg4" value="180">
+                </label>    
+                <label class="rta">200°
+                    <input type="checkbox" name="preg4" value="200">
+                </label>
+                <label class="rta">170°
+                    <input type="checkbox" name="preg4" value="170">
+                </label>
+            </div>
+            <p class="Pregunta">Pregunta 5  : ¿Como se llama el pan sin levadura? - Opcion Unica.</p>
+            <div class="preg">
+                <label class="rta">Pan blanco
+                    <input type="checkbox" name="preg5" value="blanco">
+                </label>    
+                <label class="rta">Pan germinado
+                    <input type="checkbox" name="preg5" value="germinado">
+                </label>
+                <label class="rta">Acimo
+                    <input type="checkbox" name="preg5" value="acimo">
+                </label>
+            </div>
+            <button type="button" id="enviarPreg">Enviar Respuestas</button>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

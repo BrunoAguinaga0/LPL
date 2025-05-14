@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO</title>
+    <link rel="stylesheet" href="stylejuego.css">
+    <script src="scriptjuego.js"></script>
+</head>
+<body>
+    <section>
+        <article>
+            <p>A jugar <span id="a-jugar-usuario"></span></p>
+            <label for="lista-cantidad-palabras">Cantidad de letras</label>
+            <select name="lista-cantidad-palabras" id="opciones-palabras">
+                <option value=""></option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </select>
+            <p>Palabra a adivinar</p>
+            <p><span id="palabra-misteriosa"></span></p>
+            <p>Letras adivinadas: <span id="letras-adivinadas"></span></p>
+            <p>Letras pistas: <span id="letras-pistas"></span></p>
+            <input type="text" maxlength="1" id="letra">
+            <button id="btnJugar">Jugar</button>
+            <button id="btnAbandonar">Abandonar</button>
+        </article>
+    </section>
+</body>
+</html>
