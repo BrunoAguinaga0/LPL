@@ -16,7 +16,7 @@ article {
 }
 
 .form-row label {
-    width: 150px; /* o el mismo ancho para todos */
+    width: 150px;
     margin-right: 10px;
     text-align: right;
 }
