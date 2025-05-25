@@ -15,6 +15,7 @@ body{
 }
 #lista{
     display: flex;
+    flex-direction: grid;
     justify-content: center;
 }
 
@@ -22,3 +23,15 @@ div{
     margin-right: 10%;
 }
 
+.filaTarea{
+    display: flex;
+    background-color: #527e71;
+    border: 2px solid;
+}
+
+#nuevaTarea{
+    background-color: #527e71;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    width: 60%;
+}
