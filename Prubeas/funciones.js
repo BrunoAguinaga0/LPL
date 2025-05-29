@@ -152,7 +152,77 @@ function sumarDias(fecha, dias) {
 }
 
 // Comparar fechas
-const mañana = sumarDias(ahora, 1);
-mañana > ahora; // true
+const maniana = sumarDias(ahora, 1);
 
 
+// Obtener un elemento por ID
+const elem = document.getElementById("miElemento");
+
+// Obtener el texto de un nodo
+elem.textContent; // "Hola"
+
+// Cambiar texto del nodo
+elem.textContent = "Nuevo texto";
+
+// Cambiar estilo
+elem.style.color = "red";
+
+
+// Obtener elemento padre
+elem.parentElement;
+
+
+// Obtener siguiente elemento hermano (no nodos de texto)
+elem.nextElementSibling;
+
+
+// Obtener anterior elemento hermano (no nodos de texto)
+elem.previousElementSibling;
+
+
+ejemplo:
+// <div id="primero">Uno</div>
+// <div id="segundo">Dos</div>
+// <div id="tercero">Tres</div>
+
+const tercero = document.getElementById("tercero");
+const anterior = tercero.previousElementSibling;
+
+console.log(anterior.id); // "segundo"
+
+
+// Agregar un evento
+elem.addEventListener("click", () => alert("¡Click!"));
+
+
+// Obtener todos los elementos con clase
+document.getElementsByClassName("mi-clase");
+
+// Obtener todos los elementos con etiqueta
+document.getElementsByTagName("div");
+
+// Selección avanzada
+document.querySelector(".mi-clase"); // primer match
+document.querySelectorAll("div"); // todos los divs
+
+// Crear un nuevo nodo
+let nuevoDiv = document.createElement("div");
+nuevoDiv.textContent = "Hola!";
+document.body.appendChild(nuevoDiv); // lo agrega al body
+
+// Remover un nodo
+nuevoDiv.remove();
+
+// Clonar un nodo
+let copia = nuevoDiv.cloneNode(true);
+
+// Obtener el valor de un atributo
+elem.getAttribute("id"); // "miElemento"
+
+// Cambiar o agregar un atributo
+elem.setAttribute("title", "Tooltip");
+
+// Ver clases CSS
+elem.classList.add("resaltado");
+elem.classList.remove("resaltado");
+elem.classList.toggle("activo");
