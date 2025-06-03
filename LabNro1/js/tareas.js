@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
     ingreso.addEventListener('click', function () {
         let descripcion = document.getElementById("descripcion").value
         if (descripcion != "") {
-        let parrafo = document.createElement("p")
-        parrafo.innerHTML = descripcion
-        let nuevoInput = document.createElement("input")
-        nuevoInput.setAttribute("type", "checkbox")
-        contenedor.appendChild(nuevoInput)
-        contenedor.appendChild(parrafo)
-        }else {
+            let parrafo = document.createElement("p")
+            parrafo.innerHTML = descripcion
+            let nuevoInput = document.createElement("input")
+            nuevoInput.setAttribute("type", "checkbox")
+            contenedor.appendChild(nuevoInput)
+            contenedor.appendChild(parrafo)
+        } else {
             alert("Ingrese una tarea.")
         }
     })
@@ -39,6 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             contenedor.removeChild(checkbox)
         }
         contenedor2.innerHTML = ""
-        
+
     })
 })
